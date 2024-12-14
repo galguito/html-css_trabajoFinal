@@ -1,0 +1,929 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    scroll-behavior: smooth; 
+}
+/*----------------------------------------------------------------------------------
+************************************ INDEX *****************************************
+-----------------*******-------------HEADER----------------------------------------*/
+.body-index{
+    background-color:rgb(224, 224, 224);
+}
+.header-index{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/images/imagen-fondo1.jpg);
+    display: flex;
+    flex-direction: column;
+}
+.header-index nav{
+    position: fixed;
+    z-index: 11;
+    backdrop-filter: blur(5px);
+}
+.header-index nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+.otros{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.indice{
+    color:rgba(19, 19, 129, 0.963);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.header-index nav a:hover{
+    color:rgba(19, 19, 129, 0.963);
+    transition: all .5s ease-in-out;
+}
+.logo{
+    height: 40%;
+    width: 20%;
+    margin:60px auto;
+}
+
+/*-----------------------------------------INDEX---------------------------------------
+***************************************** SECTION**************************************
+--------------------------------------------------------------------------------------*/
+
+/****************************SECTION 1********************************/
+
+.section1{
+    height: 100vh;
+    background-image: url(../assets/images/imagen-fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h1-index, .degradado{
+    padding: 25px;
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px 15px #142c8b;
+}
+.h1-index{
+    padding-top: 50px;
+    padding-left: 80px;
+    font-size: clamp(5px, 5vh, 35px);
+}
+.eslogan{
+    width: 30%;
+    padding: 10px 80px;
+    line-height: 25px;
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(10px, 2.5vh, 20px);
+}
+
+/********************************SECTION 2*******************************/
+
+.section2{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(../assets/images/opacidad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tablas, .neoprenos{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tablas .img-tablas, .img-neopreno{
+    height: 60%;
+    width: 60%;
+    padding: 5px;
+    border-radius: 15px;
+    z-index: 10;
+}
+.img-tablas:hover, .img-neopreno:hover{
+    height: 70%;
+    width: 70%;
+    cursor: pointer;
+}
+
+
+/*********************************SECTION 3*********************************/
+
+.section3{
+    height: 100vh;
+}
+.section3 .h2-info{
+    text-align: center;
+    height: 60vh;
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 100px;
+    font-size: 35px;;
+    margin: 10px 0;
+    text-shadow: 2px 3px 20px #142c8b;
+}
+.section3{
+    background-color:rgb(224, 224, 224);
+}
+.escuela-visitanos{
+    display: flex;
+    height: 40%;
+    gap: 10px;
+}
+h3{
+    width: 50%;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+h3:hover{
+    cursor: pointer;
+    color:lightsalmon;
+}
+.escuela-surf{
+    background-image: url(../assets/images/escuela\-de\-surf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.visitanos{
+    background-image: url(../assets/images/visitanos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*************************************FOOTER***************************************/
+footer{
+    height:50vh;
+    margin-top: 20px;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+footer img{
+    height: 5vh;
+    width: auto;
+    margin: 15px 5px;
+}
+footer img:hover{
+    opacity: 0.5;
+    transition: all .3s ease-in-out;
+}
+.derechos{
+    color: white;
+    margin-top: 25px;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+/*******************************MEDIDAS RESPONSIVE*****************************************
+--------------------------------------INDEX-----------------------------------------------*/
+
+@media(max-width:520px){
+    .body-index{
+        display: grid;
+        grid-template-rows:repeat(4, 100vh) auto;
+    }
+    .header-index nav{
+       align-self: center;
+    }
+    .header-index nav ul{
+        display: flex;    
+        padding: 0;
+        gap:5px;
+        justify-content: center;
+    }
+    .header-index ul li{
+        font-size: auto;
+        padding: 4px;
+        line-height: 0;
+        margin: 0;
+    }
+    .logo{
+        max-height: 35%;
+        width: auto;
+        margin-top: 40px;
+    }
+    .header-index{
+    background-position: center;
+    background-size:cover
+    }
+
+/*************Section 1*************/
+.h1-index{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 3.2vh;
+}
+.eslogan{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 3px 20px;
+    line-height: 1.3;
+}
+/*************Section 2*************/
+.tablas .img-tablas, .neoprenos .img-neopreno{
+    height: 30%;
+    width:100px;
+}
+.degradado{
+    font-size: 20px;
+    padding: 20px;
+}
+
+/*************Section 3*************/
+.section3 .h2-info{
+    font-size: 30px;
+    padding-top: 80px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.escuela-visitanos{
+    height: 38vh;
+}
+.escuela-visitanos .escuela-surf, .visitanos{
+    padding-top: 80px;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*************Footer*************/
+footer .derechos{
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 10px;
+}
+}
+
+/*------------------------------ PANTALLA MEDIA--------------------*/
+
+@media(min-width:521px) and (max-width:768px){
+
+/**********************Header******************/
+.header-index nav{
+    align-self: center;
+}
+    .logo{
+        max-height: 30%;
+        width: auto;
+        margin-top: 60px;
+    }
+    .header-index{
+    background-position: center;
+    background-size:cover
+    }
+/**********************Section 1******************/
+.h1-index{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 3.2vh;
+}
+.eslogan{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 3px 20px;
+    line-height: 1.3;
+}
+
+/**********************Section 2******************/
+.tablas .img-tablas, .neoprenos .img-neopreno{
+    height: 35%;
+    width:140px;
+}
+.degradado{
+    font-size: 20px;
+    padding: 20px;
+}
+
+/**********************Section 3******************/
+.section3 .h2-info{
+    font-size: 1.5rem;
+    padding-top: 80px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.escuela-visitanos{
+    height: 38vh;
+}
+.escuela-visitanos .escuela-surf, .visitanos{
+    padding-top: 80px;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+}
+
+/*------------------------------ PANTALLA MEDIA GRANDE--------------------*/
+
+@media(min-width:769px) and (max-width:928px){
+
+ /**********************Section 1******************/
+ .eslogan{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 3px 20px;
+    line-height: 1.3;
+    margin-left: 60px;
+}
+}
+
+
+/*----------------------------------------------------------------------------------------
+*************************************  PRODUCTOS *****************************************
+-----------------------------------------BODY--------------------------------------------*/
+.body-productos{
+    display: grid;
+    grid-template-rows: 100px 50px 1fr 1fr 50vh;
+}
+
+/*******************************PRODUCTOS****************************************
+******************************** HEADER******************************************/
+
+.header-views{
+    width: 100%;
+}
+.header-views nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+    background-color:lightsalmon;
+}
+.logo-views{
+    height: 80px;
+    width: auto;
+}
+.header-views nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 10px;
+}
+.otros{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+.indice{
+    color:rgba(19, 19, 129, 0.963);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header-views nav a:hover{
+    color:rgba(19, 19, 129, 0.963);
+    transition: all .5s ease-in-out;
+}
+
+/********************************* PRODUCTOS ********************************************
+**************************************H1*************************************************/
+
+.h1-productos{
+    margin-top: 10px;
+    text-align: center;
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 3px 20px #142c8b;
+}
+
+/************************************PRODUCTOS************************************************
+***********************************SECTION TABLAS*********************************************/
+
+.section-tablas h2, .section-neoprenos h2{
+    margin:30px 0 30px 40px;
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 3px 20px #142c8b;
+}
+.tablas-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4.37rem;
+    margin-bottom: 1.25rem;
+
+}
+.tarjeta-tablas{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.h3-tarjeta{
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    transition: all .8s ease-in-out;
+}
+.tarjeta-tablas p{
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .8s ease-in-out;
+}
+.h3-tarjeta, .tarjeta-tablas p{
+    transform: translateY(-5rem);
+    z-index: -1;
+}
+.flecha{
+    height: 1.87rem;
+    width: auto;
+    margin-top: -2.5rem;
+}
+.tarjeta-tablas:hover .h3-tarjeta{
+    transform: translateY(3.75rem);
+}
+.tarjeta-tablas:hover .parrafo{
+    transform: translateY(3.75rem);
+}
+.tarjeta-tablas:hover{
+    cursor: pointer;
+}
+
+.tabla{
+    height: 13.75rem;
+    width: 90%;
+    margin-top: 1.87rem;
+}
+
+/******************************FLECHA HACIA ARRIBA ********************************************/
+.flecha-arriba{
+    position: fixed;
+    left: 1200px;
+    top: 500px;
+}
+.flechita{
+    width: 80%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+.flechita:hover{
+    transform: translateY(-10px);
+}
+
+
+/************************************** PRODUCTOS **********************************************
+*********************************** SECTION NEOPRENOS ******************************************/
+.section-neoprenos{
+    margin-bottom: 40px;
+}
+
+.neoprenos-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+.neopreno{
+    height: 220px;
+    width: 50%;
+    margin-bottom: 60px;
+}
+.h3-neopreno{
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 5px;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+}
+.tarjeta-neoprenos p{
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+}
+.h3-neopreno, .tarjeta-neoprenos p{
+    opacity: 0;
+}
+.tarjeta-neoprenos:hover .h3-neopreno{
+    opacity: 1;
+    cursor: pointer;
+}
+.tarjeta-neoprenos:hover .parrafo-neopreno{
+    opacity: 1;
+}
+.tarjeta-neoprenos:hover{
+    cursor: pointer;
+}
+
+.tarjeta-neoprenos{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+/*******************************MEDIDAS RESPONSIVE*******************************************
+------------------------------------PRODUCTOS-----------------------------------------------*/
+
+@media(max-width:520px){
+
+ /**********************Section tablas**********************/
+
+    .body-productos{
+        display: grid;
+        grid-template-rows: 100px 50px 1fr 140vh 50vh;;
+    }
+    .h3-tarjeta{
+        font-size: 0.9rem;
+        padding: 0;
+    }
+    .parrafo{
+        font-size: 0.7rem;
+        padding: 0;
+    }
+    .flecha{
+        height: 1.25rem;
+        width: auto;
+        margin-top: -3.75rem;
+    }
+    .tarjeta-tablas:hover .h3-tarjeta{
+        transform: translateY(28px);
+    }
+    .tarjeta-tablas:hover .parrafo{
+        transform: translateY(28px);
+    }
+    .section-tablas{
+        margin-bottom: 60px;
+    }
+
+ /**********************Section neoprenos**********************/
+
+    .h3-neopreno{
+        font-size: 0.9rem;
+        padding: 0;
+        margin: 0;
+        margin-top: 3px;
+    }
+    .parrafo-neopreno{
+        font-size: 0.7rem;
+    }
+    .flecha-arriba{
+        position: fixed;
+        left: 450px;
+        top: 500px;
+        height: 70px;
+        width: 45px;
+}
+}
+
+/*------------------------------ PANTALLA MEDIA--------------------*/
+
+@media(min-width:521px) and (max-width:768px){
+
+    .body-productos{
+        display: grid;
+        grid-template-rows: 100px 50px 1fr 140vh 50vh;;
+    }
+
+/**********************Section tablas**********************/
+
+    .h3-tarjeta{
+        font-size: 0.8rem;
+        padding: 0;
+    }
+    .parrafo{
+        font-size: 0.6rem;
+        padding: 0;
+    }
+    .flecha{
+        height: 1.25rem;
+        width: auto;
+        margin-top: -3.75rem;
+        position:relative;
+    }
+    .tabla{
+        margin-bottom: 20px;
+    }
+    .tarjeta-tablas:hover .h3-tarjeta{
+        transform: translateY(28px);
+    }
+    .tarjeta-tablas:hover .parrafo{
+        transform: translateY(28px);
+    }
+    .section-tablas{
+        margin-bottom: 3.75rem;
+    }
+    
+
+/**********************Section neoprenos**********************/
+.h3-neopreno{
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+}
+.parrafo-neopreno{
+    font-size: 0.7rem;
+}
+.flecha{
+    height: 1.25rem;
+    width: auto;
+    margin-top: -3rem;
+}
+}
+
+/*------------------------------ PANTALLA MEDIA GRANDE-------------------*/
+
+@media(min-width:769px) and (max-width:1104px){
+
+/**********************Section tablas**********************/
+
+.h3-tarjeta{
+    font-size: 0.8rem;
+    padding: 0;
+}
+.parrafo{
+    font-size: 0.6rem;
+    padding: 0;
+}
+.flecha{
+    height: 1.25rem;
+    width: auto;
+    margin-top: -2.8rem;
+    position:relative;
+}
+.tabla{
+    margin-bottom: 20px;
+}
+.tarjeta-tablas:hover .h3-tarjeta{
+    transform: translateY(28px);
+}
+.tarjeta-tablas:hover .parrafo{
+    transform: translateY(28px);
+}
+.section-tablas{
+    margin-bottom: 3.75rem;
+}
+
+/**********************Section neoprenos**********************/
+.h3-neopreno{
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+}
+.parrafo-neopreno{
+    font-size: 0.7rem;
+}
+.flecha{
+    height: 1.25rem;
+    width: auto;
+    margin-top: -3rem;
+}
+}
+
+
+/*------------------------------------------------------------------------------
+***************************** PRESUPUESTO **************************************
+-------------------------------------------------------------------------------
+---------------------------------------------------------------------------------*/
+
+.body-presupuesto{
+    display: grid;
+    grid-template-rows: 100px 1fr 50vh;
+}
+.h1-contactanos{
+    padding: 25px;
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    margin-left: 8%;
+    text-shadow: 2px 3px 20px #142c8b;
+}
+form fieldset{
+    width: 80%;
+    margin:0 auto;
+    border-radius: 5px;
+    border: solid 1px #1f45de;
+    color:#213aa1;
+    margin-bottom: 50px;
+    
+}
+form fieldset li{
+    list-style: none;
+    margin: 20px;
+    padding: 5px;
+}
+form fieldset li label, textarea{
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 2px;
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+form fieldset li textarea{
+    border-radius: 5px;
+    border: solid 1px #1f45de;
+}
+form fieldset li input{
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: solid 1px #1f45de ;
+}
+form fieldset li:not(:last-child, :nth-child(5)){
+    display: flex;
+    flex-direction: column;
+}
+.bottons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.botones{
+    padding: 5px 15px;
+    background:linear-gradient(#09001cef,#1f45de);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #142c8b;
+}
+.botones:hover{
+    cursor: pointer;
+    color: #213aa1;
+    background: white;
+}
+.checkbox:hover{
+    cursor: pointer;
+    border-color: #213aa1;
+}
+
+
+/*-----------------------------------------------------------------------------------
+********************************** CONTACTO *****************************************
+------------------------------------------------------------------------------------*/
+
+.body-contacto{
+    display: grid;
+    grid-template-rows: 100px 100vh 50vh;
+}
+
+/****************************** CONTACTO *************************************************
+********************************* MAIN ***************************************************/
+
+.main-contacto{
+    background-color: #213aa1;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.contenedor-contacto{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;   
+    margin: 30px auto;
+}
+.contenido-contacto{
+    background-color: aliceblue;
+    width: 85%;
+    height: 65%;
+    margin: 30px;
+    position: relative;
+    margin-left: -130px;
+    margin-top: 85px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.contenido-contacto:hover{
+    transform: translateX(20px);
+    cursor: pointer;
+    background-color: lightsalmon;
+}
+.contenido-contacto h1{
+    background:linear-gradient(#09001cef,#1f45de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px 15px #142c8b;
+    margin: 20px;
+    text-align: center;
+}
+.contenido-contacto h2{
+    background:linear-gradient(#09001cef,#1f45de);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 40px 20px 30px;
+}
+.contenido-contacto p{
+    color:#142c8b;
+    margin:0 20px;
+}
+.main-contacto img{
+    width: 80%;
+    height: auto;
+    margin: 30px;
+    margin-left: 140px;
+    border-radius: 5px;
+}
+
+/*******************************MEDIDAS RESPONSIVE*******************************************
+------------------------------------CONTACTO-----------------------------------------------*/
+
+@media(max-width:520px){
+
+.body-contacto{
+    display: grid;
+    grid-template-rows: 100px 80vh 50vh;
+    }
+
+.contenido-contacto{
+    width: 80%;
+    height: 50%;
+    margin: 30px;
+    position: relative;
+    margin-left: -15px;
+    margin-top: 120px;
+}
+.main-contacto img{
+    width: 120%;
+    height: auto;
+    margin: 80px;
+    margin-left: 40px;
+}
+.contenido-contacto h1{
+    font-size: 20px;
+}
+.contenido-contacto h2{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contenido-contacto p{
+    font-size: 9px;
+}
+}
+
+/*------------------------------ PANTALLA MEDIA--------------------*/
+
+@media(min-width:521px) and (max-width:768px){
+
+    .body-contacto{
+        display: grid;
+        grid-template-rows: 100px 1.5fr 0.5fr;
+        }
+    
+    .contenido-contacto{
+        width: auto;
+        height: 50%;
+        margin: 30px;
+        position: relative;
+        margin-left: -30px;
+        margin-top: 100px;
+    }
+    .main-contacto img{
+        width: 120%;
+        height: auto;
+        margin: 50px;
+        margin-left: 40px;
+    }
+    .contenido-contacto h1{
+        font-size: 1.25rem;
+    }
+    .contenido-contacto h2{
+        font-size: 0,75rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .contenido-contacto p{
+        font-size: 0.56rem;
+    }
+    }

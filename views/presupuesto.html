@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="icon" type="images/png" href="../favicon.png"> <!--Favicon-->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="body-presupuesto">
+    <!--Barra de naveacion de la web-->
+    <header class="header-views">
+        <nav>
+            <img src="../assets/images/logotipo.png" alt="logo de surf" height="2000" width="2000" class="logo-views">
+            <ul>
+                <li><a href="../index.html" class="otros">Inicio</a></li>
+                <li><a href="../views/productos.html" class="otros">Galeria</a></li>
+                <li><a href="#" class="indice">Presupuesto</a></li>
+                <li><a href="../views/contacto.html" class="otros">Contacto</a></li>
+            </ul>  
+        </nav>
+    </header>
+    <!--Seccion principal Formulario-->
+    <main>
+        <h1 class="h1-contactanos">Contactanos</h1>
+        <form action="#" method="post" target="_self">
+            <fieldset>
+                <legend>Completa con tus Datos</legend>
+            <ul>
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" pattern="[a-z A-Z] {3, 20}" title="escriba letras entre 3 y 20 caracteres" required>
+                </li>
+                <li>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su email" pattern="[a-zA-Z0-9_-.]+@[a-z0-9._-]+\.[a-z]{2, 5}" required title="escriba su email">
+                </li>
+                <li>
+                    <label for="Telefono">Telefono</label>
+                    <input type="tel" id="Telefono" name="Telefono" placeholder="Ingrese su telefono" pattern="[0-9]{9}" required title="ingrese los 9 digitos de su numero">
+                </li>
+                <li>
+                    <label for="mas-informacion">Solicite mas informacion</label>
+                    <textarea id="mas-informacion" name="mas informacion" rows="10" placeholder="Solicite aqui mas informacion" title="solicite mas informacion"></textarea>
+                </li>
+                <li> <!--Checkbox politica privacidad-->
+                    <input type="checkbox" id="politica-de-privacidad" value="Si" name="politica de privacidad" required class="checkbox">
+                    <label for="politica-de-privacidad">Acepto los terminos y condiciones de privacidad</label>
+                </li>
+                <li class="bottons"> <!--Botones Formulario-->
+                    <input type="submit" value="Enviar" class="botones">
+                    <input type="reset" value="Borrar" class="botones">
+                </li>
+            </ul>
+            </fieldset>
+        </form>
+    </main>
+    <!--Pie de Pagina-->
+    <footer>
+        <a href="https://www.instagram.com/"><img src="../assets/images/logo-instagram.webp" alt="logo-instagram" height="2048" width="2048"></a>
+        <a href="https://es-la.facebook.com/login/device-based/regular/login/"><img src="../assets/images/logo-facebook.png" alt="logo-facebook" height="600" width="600"></a>
+        <a href="https://www.youtube.com/"><img src="../assets/images/logo-youtube.png" alt="logo-youtube" height="200" width="200"></a>
+        <p class="derechos">
+            Todos los derechos reservados &#169; <br>
+            Cath the wave 2018. Colonia Chapadmalal Parador Hotel 5, B7605 Mar del Plata, Provincia de Buenos Aires, Argentina <br>
+            galguito@gmail.com. 0341-155-996600. <br>
+            Aviso legal: derechos de privacidad, terminos y condiciones
+        </p>
+    </footer>
+</body>
+</html>
